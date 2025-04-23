@@ -53,3 +53,22 @@ function mostrar_mapa_shortcode() {
     return ob_get_clean(); 
 }
 add_shortcode('mostrar_mapa', 'mostrar_mapa_shortcode');
+
+
+function scroll_arriba_global_script() {
+    ?>
+    <script>
+      document.addEventListener('click', function (e) {
+        const boton = e.target.closest('.btn_volver_inicio a.elementor-button');
+        if (boton) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      });
+    </script>
+    <?php
+}
+add_action('wp_footer', 'scroll_arriba_global_script', 100);

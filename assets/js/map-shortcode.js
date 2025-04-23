@@ -99,28 +99,4 @@ console.log('funcion que ejecuta mapa');
 
 console.log('codigo de btn volver inicio')
 
-document.addEventListener('DOMContentLoaded', function () {
-    
-    const botonesVolver = document.querySelectorAll('.btn_volver_inicio a.elementor-button');
 
-    botonesVolver.forEach(boton => {
-      boton.addEventListener('click', function (e) {
-        e.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-    });
-  });
-
-  document.addEventListener('click', function (e) {
-    const boton = e.target.closest('.btn_volver_inicio a.elementor-button');
-    if (boton) {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  });
