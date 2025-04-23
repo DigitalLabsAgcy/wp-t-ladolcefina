@@ -24,16 +24,17 @@ async function initMap() {
         content: "",
         disableAutoPan: true,
     });
+   
 
     // Add some markers to the map.
-    const markers = locations.map((position, i) => {
+   const markers = locations.map((position, i) => {
         if (position.lat !== 0 && position.lng !== 0) { }
         const label = ".";
         const pinGlyph = new google.maps.marker.PinElement({
-            glyph: label,
-            glyphColor: "#af95d3",
-            background: "#af95d3",
-            borderColor: "#af95d3",
+            //glyph: label,
+           // glyphColor: "#af95d3",
+           // background: "#af95d3",
+            //borderColor: "#af95d3",
         });
         const marker = new google.maps.marker.AdvancedMarkerElement({
             position,
@@ -43,11 +44,18 @@ async function initMap() {
         // markers can only be keyboard focusable when they have click listeners
         // open info window when marker is clicked
         marker.addListener("click", () => {
-            infoWindow.setContent(position.label);
+            const contentString = `
+                <div style="max-width: 220px;">
+                    <h3 style="margin:0 0 5px; font-size:1rem;color: black;font-weight: 500;">${position.label}</h3>
+                    <p style="margin:0;color: #5b5b5b;font-size: 0.8rem;font-family: Roboto, Arial;">${position.direccion}</p>
+                </div>
+            `;
+            infoWindow.setContent(contentString);
             infoWindow.open(map, marker);
         });
+
         return marker;
-    });
+    }).filter(Boolean);
     console.log('markers: ');
     console.log(markers);
 
@@ -69,18 +77,18 @@ async function initMap() {
             div.style.fontSize = "14px";
             div.style.boxShadow = "0 2px 6px rgba(0,0,0,0.3)";
             div.style.border = "2px solid #aecad9";
-            div.innerText = count; // Display the count inside the cluster
+            div.innerText = count; // Display the count inside the cluster*/
 
             // Return a marker-like cluster object
             return new google.maps.marker.AdvancedMarkerElement({
                 position,
-                content: div,
+               content: div,
             });
         },
     };
     console.log(customRenderer);
     // Add a marker clusterer to manage the markers.
-    new MarkerClusterer({ markers, map, renderer: customRenderer });
+    new MarkerClusterer({ markers, map /*, renderer: customRenderer */});
 }
 
 // create a const locations array taking the data from an data-locations attribute of a div with id #map-locations
@@ -88,3 +96,31 @@ async function initMap() {
 console.log(locations);
 initMap();
 console.log('funcion que ejecuta mapa');
+
+console.log('codigo de btn volver inicio')
+
+document.addEventListener('DOMContentLoaded', function () {
+    
+    const botonesVolver = document.querySelectorAll('.btn_volver_inicio a.elementor-button');
+
+    botonesVolver.forEach(boton => {
+      boton.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    const boton = e.target.closest('.btn_volver_inicio a.elementor-button');
+    if (boton) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  });

@@ -89,10 +89,12 @@ exports.move = move;
 
 //exports.js = js;
 exports.js_acf_map = js_acf_map;
+exports.css = css;
 //exports.css = css;
-exports.default = parallel(js_acf_map, move);
+exports.default = parallel(js_acf_map,css, move);
 
 //exports.js_prod = js_prod;
 exports.js_prod_acf_map = js_prod_acf_map;
+exports.css_prod = css_prod;
 //exports.css_prod = css_prod;
-exports.production = parallel(js_prod_acf_map, move);
+exports.production = parallel(js_prod_acf_map,css_prod, move);
