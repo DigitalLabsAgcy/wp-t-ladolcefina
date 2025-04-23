@@ -16,8 +16,8 @@ async function initMap() {
     );
     //funcion que pinta mapa
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 7,
-        center: { lat: 37.5246323, lng: -77.575662 },
+        zoom: 11,
+        center: { lat: 40.4267639, lng: -3.7036229 },
         mapId: "428d46b9bd6e05b7",
     });
     const infoWindow = new google.maps.InfoWindow({
@@ -31,9 +31,9 @@ async function initMap() {
         const label = ".";
         const pinGlyph = new google.maps.marker.PinElement({
             glyph: label,
-            glyphColor: "#1675a9",
-            background: "#1675a9",
-            borderColor: "#1675a9",
+            glyphColor: "#af95d3",
+            background: "#af95d3",
+            borderColor: "#af95d3",
         });
         const marker = new google.maps.marker.AdvancedMarkerElement({
             position,
@@ -61,7 +61,7 @@ async function initMap() {
             div.style.width = `${30 + count * 0.5}px`; // Dynamically size based on count
             div.style.height = `${30 + count * 0.5}px`;
             div.style.borderRadius = "50%";
-            div.style.backgroundColor = count > 50 ? "#1675a9" : count > 10 ? "#1675a9" : "#1675a9";
+            div.style.backgroundColor = count > 50 ? "#af95d3" : count > 10 ? "#1675a9" : "#af95d3";
             div.style.color = "white";
             div.style.display = "flex";
             div.style.justifyContent = "center";
