@@ -1,0 +1,15 @@
+{
+    "name": "Flywheel",
+    "uploadOnSave": false,
+    "port": 2222,
+    "protocol": "sftp",
+    "profiles": {
+        "wpe-prd": {
+            "remotePath": "/wp-content/themes/generatepress_child",
+            "host": "ladolcefinaprd.sftp.wpengine.com",
+            "username": "ladolcefinaprd-digitallabs",
+            "password": ""
+        }
+    },
+    "defaultProfile": "wpe-prd"
+}
