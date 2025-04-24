@@ -2,41 +2,41 @@
 function mostrar_mapa_shortcode() {
     $locations = array(
         array(
-            'label' => 'Gelatería Dolcefina Salamanca',
+            'label' => 'Gelatería La Dolce Fina',
             'lat' => 40.4223691,
             'lng' => -3.6831007,
-            'direccion' => 'Paracas 431, Lima 15022'
+            'direccion' => 'C. de Villanueva, 31, Salamanca, 28001 Madrid, España'
         ),
         array(
-            'label' => 'Gelateria Dolcefina Chamberi',
+            'label' => 'Gelatería La Dolce Fina',
             'lat' => 40.4368949,
             'lng' => -3.6998677,
-            'direccion' => 'Calle de Goya, 12, 28001 Madrid, España'
+            'direccion' => 'Calle de Sta Engracia, 101, Chamberí, 28010 Madrid, España'
         ),
         array(
-            'label' => 'Gelateria Dolcefina Centro',
+            'label' => 'Gelatería La Dolce Fina',
             'lat' => 40.4267639,
             'lng' => -3.7036229,
-            'direccion' => 'C. del Camino del Cura, 10, 28109 Alcobendas, Madrid'
+            'direccion' => 'Calle de San Andrés, 16, Centro, 28004 Madrid, España'
 
         ),
         array(
-            'label' => 'Gelateria Dolcefina Cascorro',
+            'label' => 'Gelatería La Dolce Fina',
             'lat' => 40.4109748,
             'lng' => -3.7074469,
             'direccion' => 'Pl. de Cascorro, 20, Centro, 28005 Madrid, España'
         ),
         array(
-            'label' => 'Gelatería La Dolce Fina Alcobendas',
+            'label' => 'Centro Comercial El Encinar',
             'lat' => 40.5085624,
             'lng' => -3.6451435,
-            'direccion' => 'Calle de Goya, 12, 28001 Madrid, España'
+            'direccion' => 'C. del Camino del Cura, 10, 28109 Alcobendas, Madrid, España'
         ),
         array(
-            'label' => 'Gelatería La Dolce Fina Majadahonda',
+            'label' => 'Centro Comercial Monteclaro',
             'lat' => 40.44249,
             'lng' => -3.8456293,
-            'direccion' => 'Av. de Monteclaro, 28223 Madrid, España'
+            'direccion' => 'ACtra. de Pozuelo, 28223 Majadahonda, Madrid, España'
         )
     );
 
