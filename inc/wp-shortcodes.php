@@ -27,13 +27,13 @@ function mostrar_mapa_shortcode() {
             'direccion' => 'Pl. de Cascorro, 20, Centro, 28005 Madrid, España'
         ),
         array(
-            'label' => 'Centro Comercial El Encinar',
+            'label' => 'Gelatería La Dolce Fina',
             'lat' => 40.5085624,
             'lng' => -3.6451435,
             'direccion' => 'C. del Camino del Cura, 10, 28109 Alcobendas, Madrid, España'
         ),
         array(
-            'label' => 'Centro Comercial Monteclaro',
+            'label' => 'Gelatería La Dolce Fina',
             'lat' => 40.44249,
             'lng' => -3.8456293,
             'direccion' => 'ACtra. de Pozuelo, 28223 Majadahonda, Madrid, España'
