@@ -38,7 +38,7 @@ header{
         }
     }
 }
-.elementor-button-link,.column_btn_pedido .elementor-item{
+header .elementor-button-link,.column_btn_pedido .elementor-item{
    @media (max-width:768px) {
      padding: 0.5rem 0.8rem!important;
     font-size: 15px !important;
@@ -56,7 +56,7 @@ header{
 
 .home .elementor-column.elementor-col-50{
     @media (max-width:760px){
-        margin-top: 4rem  !important;
+        margin-top: 1rem  !important;
     }
 }
 
@@ -129,6 +129,9 @@ header .elementor-container{
                 justify-content: start;
                 width: 100%;
             }
+            @media (max-width:980px) {
+                margin-top: 0 !important;
+            }
             .elementor-element{
                 @media (max-width:1024px) {
                     max-width: 100%;
@@ -140,7 +143,7 @@ header .elementor-container{
     .column_btn_pedido{
         width: 15vw !important;
         @media (max-width:560px) {
-            width: 20vw !important;
+            width: 17vw !important;
         }
         .elementor-nav-menu--dropdown{
             max-width: 100%;
@@ -160,6 +163,11 @@ header .elementor-container{
         width: fit-content;
         @media (max-width:560px) {
             gap: 5vw;
+            
+            margin-left: 1rem !important;
+            margin-right: 1rem !important;
+            flex-wrap: nowrap !important;
+            width: auto !important;
         }
     }
     .column_logo{
@@ -167,4 +175,18 @@ header .elementor-container{
             width: 26vw !important;
         } 
     }
+}
+
+.grecaptcha-badge{
+    display: none;
+}
+.elementor-form label a{
+    color: #AF95D3;;
+}
+
+.footer .elementor-form label a{
+    color: #fff;;
+}
+.elementor-28 .elementor-element.elementor-element-c88b1f0 .elementor-icon-list-item:hover .elementor-icon-list-text {
+    color: #5303C2;
 }

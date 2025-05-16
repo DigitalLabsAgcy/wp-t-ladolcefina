@@ -27,14 +27,14 @@ header .elementor-widget-container a img {
   object-fit: contain !important;
 }
 @media (max-width: 768px) {
-  .elementor-button-link,
+  header .elementor-button-link,
   .column_btn_pedido .elementor-item {
     padding: 0.5rem 0.8rem !important;
     font-size: 15px !important;
   }
 }
 @media (max-width: 560px) {
-  .elementor-button-link,
+  header .elementor-button-link,
   .column_btn_pedido .elementor-item {
     padding: 2vw 1.5vw !important;
     font-size: 12px !important;
@@ -47,7 +47,7 @@ header .elementor-widget-container a img {
 }
 @media (max-width: 760px) {
   .home .elementor-column.elementor-col-50 {
-    margin-top: 4rem  !important;
+    margin-top: 1rem  !important;
   }
 }
 @media (max-width: 779px) {
@@ -108,6 +108,11 @@ header .elementor-container .elementor-column:nth-child(2) .elementor-widget-wra
     width: 100%;
   }
 }
+@media (max-width: 980px) {
+  header .elementor-container .column_btn_llamanos .elementor-widget-wrap {
+    margin-top: 0 !important;
+  }
+}
 @media (max-width: 1024px) {
   header .elementor-container .column_btn_llamanos .elementor-widget-wrap .elementor-element {
     max-width: 100%;
@@ -119,7 +124,7 @@ header .elementor-container .column_btn_pedido {
 }
 @media (max-width: 560px) {
   header .elementor-container .column_btn_pedido {
-    width: 20vw !important;
+    width: 17vw !important;
   }
 }
 header .elementor-container .column_btn_pedido .elementor-nav-menu--dropdown {
@@ -143,10 +148,26 @@ header .elementor-container .column_btn_pedido .elementor-nav-menu--dropdown {
 @media (max-width: 1024px) and (max-width: 560px) {
   header .elementor-container {
     gap: 5vw;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    flex-wrap: nowrap !important;
+    width: auto !important;
   }
 }
 @media (max-width: 1024px) {
   header .elementor-container .column_logo {
     width: 26vw !important;
   }
+}
+.grecaptcha-badge {
+  display: none;
+}
+.elementor-form label a {
+  color: #AF95D3;
+}
+.footer .elementor-form label a {
+  color: #fff;
+}
+.elementor-28 .elementor-element.elementor-element-c88b1f0 .elementor-icon-list-item:hover .elementor-icon-list-text {
+  color: #5303C2;
 }
